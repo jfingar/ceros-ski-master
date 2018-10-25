@@ -10,8 +10,8 @@ html, body {
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 210px;
-    width: 160px;
+    height: 244px;
+    width: 180px;
 }
 #timer {
     font-size: 30px;
@@ -37,7 +37,7 @@ html, body {
 }
 .score-col-1 {
     float: left;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .score-col-2 {
    float: left;
@@ -64,8 +64,11 @@ html, body {
 #pause-directions {
     position: absolute;
     top: 3px;
-    left: 193px;
+    left: 207px;
     color: #888;
     font-style: italic;
     font-size: 12px;
+}
+#last-run-score {
+    margin-bottom: 12px;
 }

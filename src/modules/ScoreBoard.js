@@ -4,6 +4,7 @@ export default class ScoreBoard {
 
     constructor() {
         this.currentTime = 0.00;
+        this.lastTime = null;
         this.currentInterval = null;
         this.topFiveTimes = [];
         $('#clear-scores').on('click', () => this.clearScoreboard());
@@ -28,8 +29,10 @@ export default class ScoreBoard {
     resetTimer() {
         if(this.currentTime > 0.00) {
             this.stopTimer();
+            this.lastTime = this.currentTime;
             this.currentTime = 0.00;
             $('#timer').text(this.currentTime.toFixed(2));
+            $('#last-run-val').text(this.lastTime.toFixed(2) + ' seconds');
         }
     }
 
