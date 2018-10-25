@@ -58,6 +58,8 @@ We are looking forward to see what you come up with!
 ### Jason Fingar Notes
 ****************************
 
+Working application has been deployed to http://ceros-ski-master.jasonfingar.com/
+
 ### Environment & Deployment changes
 - Converted to Webpack environment / added Webpack config featuring babel loader and style loader, to allow compilation of ES6 code and module bundling.
 - Production output is a single minified js resource.
