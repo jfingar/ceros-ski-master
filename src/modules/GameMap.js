@@ -13,6 +13,7 @@ export default class GameMap {
         this.loadedAssets = {};
         this.canvasContext = this.renderCanvasElement();
         this.skier = null;
+        this.obstacleThreshold = 8;
     }
 
     renderCanvasElement() {
@@ -53,8 +54,8 @@ export default class GameMap {
     }
 
     placeNewObstacle(direction) {
-        let shouldPlaceObstacle = _.random(1, 8);
-        if(shouldPlaceObstacle !== 8) {
+        let shouldPlaceObstacle = _.random(1, this.obstacleThreshold);
+        if(shouldPlaceObstacle !== this.obstacleThreshold) {
             return;
         }
 

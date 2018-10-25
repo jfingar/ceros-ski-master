@@ -93,3 +93,7 @@ Working application has been deployed to http://ceros-ski-master.jasonfingar.com
 
 - Pressing the "p" key toggles pause / unpause
 - added visual display toward center of screen to show paused state clearly
+
+### Implemented new feature: Difficulty Level
+- Radio button group for selecting easy / medium / hard difficulty
+- Increasing or decreasing the difficulty controls the skier speed as well as the amount of obstacles placed on the map.

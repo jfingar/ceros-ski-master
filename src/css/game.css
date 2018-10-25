@@ -72,3 +72,18 @@ html, body {
 #last-run-score {
     margin-bottom: 12px;
 }
+#speed-level-container {
+    position: absolute;
+    top: 15px;
+    left: 207px;
+    color: #666;
+}
+#difficulty-level-container {
+    position: absolute;
+    top: 24px;
+    left: 205px;
+    background-color: #FFF;
+    border: 1px solid #999;
+    padding: 7px;
+    color: #000;
+}

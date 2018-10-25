@@ -11,6 +11,8 @@ export default class App {
         this.scoreBoard = new ScoreBoard();
         this.gameIsPaused = false;
 
+        this.difficultyLevel = 'hard';
+
         let storedScores = window.localStorage.getItem("bestScores");
         if(storedScores) {
             this.scoreBoard.topFiveTimes = JSON.parse(storedScores);
@@ -87,6 +89,23 @@ export default class App {
             this.scoreBoard.resetTimer();
         } else {
             this.scoreBoard.stopTimer();
+        }
+    }
+
+    manageDifficultyLevel() {
+        switch($('.difficulty-selection:checked').val()) {
+            case 'easy' :
+                this.skier.speed = 6;
+                this.gameMap.obstacleThreshold = 25;
+                break;
+            case 'medium' :
+                this.skier.speed = 8;
+                this.gameMap.obstacleThreshold = 8;
+                break;
+            case 'hard' :
+                this.skier.speed = 10;
+                this.gameMap.obstacleThreshold = 3;
+                break;
         }
     }
 }

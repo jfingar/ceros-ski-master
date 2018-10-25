@@ -25,6 +25,8 @@ const gameLoop = () => {
         app.gameMap.canvasContext.restore();
 
         app.manageScoreboard();
+
+        app.manageDifficultyLevel();
     }
 
     requestAnimationFrame(gameLoop);
